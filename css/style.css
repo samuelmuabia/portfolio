@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main ,footer,nav{
+    background-color: #191627;
+    margin: 0;
+    padding: 0;
+    padding-top:66px;
+
+}
+h1,h2,h3,h4,h5,h6,p,label,i{
+    color: white;
+}
+section{
+    margin: 4% 0;
+    padding-top:66px;
+}
+hr{
+    color: white;
+    width: 25%;
+margin: auto;
+border-top: 5px dotted #cde2e2;
+}
+nav{
+    border-bottom: 1px solid white;
+}
+
+
+#home{
+    text-align: center;
+    margin-top: 0%;
+    padding: 4% 0;
+}
+
+#home img{
+    width: 20rem;
+    margin-top: 5%;
+    border: 12px dotted rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 10px;
+}
+#home h1{
+    font-size: 2.5rem;
+}
+#home h3{
+    font-size: 1.25rem;
+    color: rgba(206, 206, 206, 0.515);
+}
+#about{
+    background-color: #9ff0f1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    --bs-gutter-x:0;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 10px;
+    height: 300px;
+    width: 768px;
+    padding-top: 0;
+    margin-top: 66px;
+} 
+#about img{
+    height: 300px;
+}
+#about .text{
+    text-align: center;
+    margin-right: 3%;
+    padding: 2rem;
+}
+#about .text h1{
+    margin: 5% 0;
+    font-size: 1.5rem ;
+    font-weight: 600;
+    color: #000;
+}
+#about .text p {
+    font-size: 0.7rem;
+    color: rgba(103, 103, 103, 0.837);
+}
+
+#skill h1{
+    text-align: center;
+    margin: 3% 0;
+}
+.accordion{
+    width: 948px;
+    margin: auto;
+}
+strong{
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+#portfolio{
+    width: 948px;
+}
+#contact{
+    width: 948px;
+}
+#portfolio h1{
+    text-align: center;
+    margin: 2% 0;
+}
+#contact{
+    margin-bottom: 0;
+    padding-bottom: 4%;
+}
+footer p{
+    margin-bottom: 0;
+    color: rgba(135, 196, 249, 0.725);
+}
+@media(max-width:947px){
+    .accordion , #contact, #portfolio{
+        width: 100%;
+    }
+}
+@media (max-width:767px){
+    #about {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+    }
+    #about img{
+        display: none;
+    }
+   
+    
+}
